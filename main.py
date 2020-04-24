@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 URL = 'https://ca.finance.yahoo.com/world-indices'
 page = requests.get(URL).text
 
+stock_and_prices = {}
+
 page_data = BeautifulSoup(page, "html.parser")
 
+stock_table = page_data.find('table').find("tbody").find_all('tr')
 
-stock_name = page_data.find('td', attrs={'class': 'data-col1 Ta(start) Pend(10px)'})
-price_box = page_data.find('td', attrs={'class': 'data-col2 Ta(end) Pstart(20px)'})
+for row in stock_table:
+    stock_and_prices.update({row.find('td', attrs={'class': 'data-col1 Ta(start) Pend(10px)'}).text.strip(): row.find('td', attrs={'class': 'data-col2 Ta(end) Pstart(20px)'}).text.strip()})
 
-stock = stock_name.text.strip()
-price = price_box.text.strip()
 
-print(stock)
-print(price)
+print(stock_and_prices)
