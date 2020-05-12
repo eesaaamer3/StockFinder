@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortfolioComponent } from './portfolio';
 
 const routes: Routes = [
-  { path: '', component: PortfolioComponent },
+  { path: 'portfolio', component: PortfolioComponent },
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];
