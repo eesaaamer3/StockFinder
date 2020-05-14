@@ -13,15 +13,15 @@ th {
     border-bottom: 1px solid lightgrey;
     border-collapse: collapse;
     font-size: 17px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 td {
-    border-bottom: 1px solid lightgrey;
+    /* border-bottom: 1px solid lightgrey; */
     border-collapse: collapse ;
     padding-top: 14px;
     font-size: 15px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     
 }
 
