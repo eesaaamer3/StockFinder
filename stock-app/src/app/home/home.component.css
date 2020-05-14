@@ -2,3 +2,29 @@
     position: absolute;
     margin-top: 100px;
 }
+
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse ;
+}
+
+th {
+    border-bottom: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-size: 17px;
+    padding-bottom: 3px;
+}
+
+td {
+    border-bottom: 1px solid lightgrey;
+    border-collapse: collapse ;
+    padding-top: 14px;
+    font-size: 15px;
+    padding-bottom: 3px;
+    
+}
+
+.stock-name, .change-dollars, .change-percent, .price {
+    padding-right: 233px;
+}
