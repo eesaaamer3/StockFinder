@@ -20,7 +20,7 @@
     right: 0;
   }
 
-  .nav-list {
+  #nav-list {
     list-style-type: none;
   }
   li {
@@ -29,10 +29,11 @@
   a {
     text-decoration: none;
     color:grey;
+    padding-bottom: 20px;
   }
   
   .home-link {
-    margin-left: 450px;
+    margin-left: 420px;
     font-size: 23px;
   }
 
@@ -42,5 +43,5 @@
   }
 
   .active {
-    border-bottom: 2px solid grey;
+    border-bottom: 5px solid grey;
   }
